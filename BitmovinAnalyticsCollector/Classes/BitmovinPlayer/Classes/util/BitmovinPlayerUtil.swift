@@ -25,12 +25,12 @@ public class BitmovinPlayerUtil {
     
     static func getAdTagTypeFromAdTag(adTag: AdTag)-> AdTagType {
         switch adTag.type {
-            case BMPAdTagType.VAST:
-                return AdTagType.VAST;
-            case BMPAdTagType.VMAP:
-                return AdTagType.VMAP;
+            case .VAST:
+                return .VAST;
+            case .VMAP:
+                return .VMAP;
             default:
-                return AdTagType.UNKNOWN;
+                return .UNKNOWN;
         }
     }
     
